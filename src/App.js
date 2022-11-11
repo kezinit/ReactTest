@@ -1,5 +1,7 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMayName';
+import Pessoa from './components/Pessoa';
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
 
       <h1>Usando Componentes</h1>
         <HelloWorld />
+        <SayMyName nome="Kevin" />
+        <Pessoa nome="Kevin" idade="17" profissao="Estudante" foto="https://via.placeholder.com/150"/>
     </div>
   );
 }

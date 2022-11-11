@@ -2,24 +2,67 @@ body{
     background-color:black;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 .content{
-    background-color: aliceblue;
+    background-color: #fff;
+    width: 100%;
     display: flex;
+    border: 5px solid rgb(218, 241, 250);
 }
 .navTop{
     width: 100%;
+    height: 15vh;
 }
 .h1Nav{
+    display: flex;
     margin-left: 10vh;
+    font-size: 4vh;
+    text-transform: uppercase;
+    animation: h1anim 3s ease 20s infinite alternate forwards;
+    transition: .7s ease;
+}
+@keyframes h1anim{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes h2anim{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+.h2Nav{
+    display: flex;
+    position: relative;
     font-size: 3vh;
+    width: 100%;
+    opacity: 1;
+    text-transform: uppercase;
+    animation: h2anim 3s ease 50s infinite alternate forwards;
+    transition: .7s ease;
 }
 .ulNav{
     display: flex;
+    width: 50%;
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #000;
+}
+.divli{
+   display: flex;
+   /* justify-content: space-between; */
+   align-items: center;
 }
 .liNav{
-    margin-right: 30vh;
+    font-size: 2vh;
+    text-transform: uppercase;
+    justify-items: center;
+    /* justify-content: space-between; */
+    font-weight: bold;
 }

@@ -1,0 +1,25 @@
+body{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    background-color: aliceblue;
+    display: flex;
+}
+.navTop{
+    width: 100%;
+}
+.h1Nav{
+    margin-left: 10vh;
+    font-size: 3vh;
+}
+.ulNav{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.liNav{
+    margin-right: 30vh;
+}
